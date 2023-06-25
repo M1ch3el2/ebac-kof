@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+
+    <style>
+        .navbar-nav .nav-link.active {
+            color: #fff;
+        }
+
+        .nav-link {
+            text-align: center;
+            color: #fff;
+        }
+
+        header {
+            top: 0;
+            left: 0;
+            background-color: #fff;
+        }
+
+        .carousel-inner>.carousel-item>img {
+            height: 700px;
+        }
+
+        .row .card img {
+            height: 400px;
+        }
+
+        @media screen and (min-width: 1000px) {
+            .nav-link {
+                margin-left: 60px;
+            }
+        }
+
+        @media screen and (max-width: 991px) {
+            .carousel-inner>.carousel-item>img {
+                height: 450px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .carousel-inner>.carousel-item>img {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg mb-5 bg-secondary bg-gradient">
+            <div class="container">
+                <img src="./logo/KOF_logo.webp" width="200px">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#cabecalho">Ínicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#carousel-exemplo">Carousel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#cards">Cards</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container mb-5">
+            <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img class="d-block w-100" src="./carousel/3181469-king-of-fighters-1920x1242.jpg">
+                        <div class="carousel-caption">
+                            <h2>Picture 1</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100"
+                            src="./carousel/apps.36152.71761435029850838.ef28fbe6-2694-4c5d-b0df-1dd36b54aa52.jpg">
+                        <div class="carousel-caption">
+                            <h2>Picture 2</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="./carousel/The-King-of-Fighters-All-Star_bg.jpg">
+                        <div class="carousel-caption">
+                            <h2>Picture 3</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="./carousel/The-King-of-Fighters-for-Girls-1.jpg">
+                        <div class="carousel-caption">
+                            <h2>Picture 4</h2>
+                        </div>
+                    </div>
+                </div>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev"
+                    type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next"
+                    type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-exemplo" class="active"
+                        data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="cards">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                    <article class="card text-bg-dark">
+                        <img src="./imagens_card/kyo.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title bg-gradient p-2 rounded">Kyo Kusanagi</h4>
+                            <p class="card-text">
+                                Kyo Kusanagi é o personagem principal da Orochi Saga em The King of
+                                Fighters. Ele foi introduzido primeiramente em The King of Fighters '94 como o líder do
+                                Japan team. Ele é rival de Iori Yagami e K'.
+                                Ele foi introduzido pela primeira vez como um arrogante e delinquente estudante do
+                                ensino médio que é o herdeiro do clã Kusanagi, um dos três clãs que selou a lendária
+                                entidade cobra, Orochi, 1,800 anos atrás. Seu clã exerce poderes de pirocinese, um poder
+                                herdado que alguns membros obtem.
+                            </p>
+                            <footer class="card-footer">
+                                Postado em <time>22/06/2023 ás 00:18</time>
+                            </footer>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                    <article class="card text-bg-dark">
+                        <img src="./imagens_card/yori.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title bg-gradient p-2 rounded">Iori Yagami</h4>
+                            <p class="card-text">
+                                Iori Yagami é um personagem que fez sua primeira
+                                aparição no jogo de luta Neo Geo, The King of Fighters '95. Ele é um personagem
+                                recorrente central e o inimigo inicial (e eventual rival) de Kyo Kusanagi. Ele é o
+                                herdeiro de um dos três clãs que selaram a lendária entidade cobra, Orochi, 1.800 anos
+                                atrás. Seu clã, anteriormente conhecido como Yasakani , exerce poderes
+                                pirocinéticos. Eles mantêm intacto o selo sobre Orochi com a ajuda dos clãs Kusanagi e
+                                Yata, usando três artefatos antigos.
+                            </p>
+                            <footer class="card-footer">
+                                Postado em <time>22/06/2023 ás 00:18</time>
+                            </footer>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                    <article class="card text-bg-dark">
+                        <img src="./imagens_card/terry.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title bg-gradient p-2 rounded">Terry Bogard</h4>
+                            <p class="card-text">
+                                Terry Bogard é um homem incrivelmente carismático, alegre e amigável com todos ao seu
+                                redor. Ele não tem má vontade em relação a alguém que não seja o verdadeiramente
+                                malicioso e irremediável, incluindo inimigos como Geese Howard, o assassino de seu pai
+                                adotivo, e o psicopata Ryuji Yamazaki.
+                                Seu relacionamento com Andy é de respeito, reconhecendo seu irmão mais novo como seu
+                                rival mais feroz. Ele sente um senso de parentesco com Blue Mary por sua perda, e os
+                                dois desenvolveram um relacionamento de longo tempo.
+                            </p>
+                            <footer class="card-footer">
+                                Postado em <time>22/06/2023 ás 00:18</time>
+                            </footer>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                    <article class="card text-bg-dark">
+                        <img src="./imagens_card/kim.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title bg-gradient p-2 rounded">Kim Kaphwan</h4>
+                            <p class="card-text">
+                                Desde criança, Kim Kaphwan sempre treinou duramente a arte do Tae Kwon Do e seguindo os
+                                conselhos de seus mentores, decidiu usar isso como forma de promover a justiça. Após
+                                muitos anos de treinamento árduo, Kim alcançou a condição de campeão nacional de Tae
+                                Kwon Do de seu país, a Coréia do Sul, e se auto-proclamou "o lutador da justiça". Não
+                                muito tempo depois, ele soube pela TV sobre a famosa dupla de malfeitores Chang
+                                "Azaghal" Koehan e Choi Bounge causando problemas em diversos locais ao longo do país.
+                            </p>
+                            <footer class="card-footer">
+                                Postado em <time>22/06/2023 ás 00:18</time>
+                            </footer>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                    <article class="card text-bg-dark">
+                        <img src="./imagens_card/orochi.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title bg-gradient p-2 rounded">Orochi</h4>
+                            <p class="card-text">
+                                Orochi é o principal antagonista da primeira saga de The King of Fighters e
+                                o Final Boss de The King of Fighters '97.
+                                Orochi foi selado 1.800 anos atrás pelos três tesouros sagrados do Japão. Os três
+                                descendentes do clã estão encarregados de proteger o selo sobre ele.
+                                Na fanfic, apesar de sua encarnação de KOF ser a mais famosa, esse Orochi é considerado
+                                os mesmos Yamata no Orochi de outras histórias e eventos no Mundo dos Desenhos.
+                            </p>
+                            <footer class="card-footer">
+                                Postado em <time>22/06/2023 ás 00:18</time>
+                            </footer>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                    <article class="card text-bg-dark">
+                        <img src="./imagens_card/rugal.webp">
+                        <div class="card-body">
+                            <h4 class="card-title bg-gradient p-2 rounded">Rugal Bernstein</h4>
+                            <p class="card-text">
+                                Rugal Bernstein é um recorrente boss na franquia The
+                                King of Fighters, e é muitas vezes considerado um dos chefes mais difíceis em toda a
+                                franquia. No anniversary website, SNK declarou que Rugal foi inicialmente baseado no
+                                conceito de "O vilão mais poderoso e mal de todos". Toyohisa Tanabe afirma que seu
+                                estilo de luta foi criado para enfatizar a força de Rugal como o primeiro Boss da
+                                franquia. Ele também comenta que "foi um pouco exagerado" com o damage ratio do Genocide
+                                Cutter em The King of Fighters '94.
+                            </p>
+                            <footer class="card-footer">
+                                Postado em <time>22/06/2023 ás 00:18</time>
+                            </footer>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center p-3">&copy; EBAC KOF - Todos os direitos reservados </footer>
+
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
